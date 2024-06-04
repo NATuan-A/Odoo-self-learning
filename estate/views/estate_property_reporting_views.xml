@@ -1,0 +1,18 @@
+<odoo>
+    <record id="estate_property_view_graph" model="ir.ui.view">
+        <field name="name">estate.property.report.type.graph</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <graph string="Pipeline Analysis" sample="1">
+                <field name="type_id"/>
+                <field name="date_availability" interval="month"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="estate_property_reporting_action" model="ir.actions.act_window">
+        <field name="name">Reporting</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">graph</field>
+    </record>
+</odoo>
