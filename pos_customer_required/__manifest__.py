@@ -1,5 +1,3 @@
-# /path/to/odoo/addons/custom_pos/__manifest__.py
-
 {
     'name': 'Custom POS',
     'version': '1.0',
@@ -12,7 +10,7 @@
     ],
     'assets': {
         'point_of_sale.assets': [
-            'custom_pos/static/src/js/pos_custom_actionpad.js',
+            'pos_customer_required/static/src/js/pos_custom_actionpad.js',
         ],
     },
     'installable': True,
